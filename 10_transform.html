@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Transform</title>
+   <style>
+      /*
+         transform: matrix(1,2,3,4,5,6);
+         transform: translate(120px, 50%);
+         transform: scale(2, 0.5);
+         transform: rotate(o.5turn);
+         transform: skew(30deg, 20deg); 
+       */
+      body {
+         background: #333;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+      }
+
+      .box {
+         background: white;
+         width: 300px;
+         height: 300px;
+         
+         /*// deg = degrees //
+            transform: rotate(25deg); */
+         /*// diagnal lines //
+            transform: skew(25deg); */
+         /*// doubling it in size (scaling it up) //
+            transform: scale(2); */
+
+         transition: all 1s ease-in-out;
+      }
+
+      .box:hover {
+         /* transform: rotate(180deg);
+         transform: skew(25deg);
+         transform: scale(2); */
+
+         /* transform: translateY(100px);
+            - Moves it down 100px 
+            transform: translateY(-100px);
+            - Moves it up 100px */
+         /* transform: translateY(-100px); */
+         /* transform: translatex(100px); 
+            - moves to the right 
+            transform: translateX(-100px);
+            - moves to the left */
+         /* transform: translatex(-100px); */
+
+         /* Combine X & Y; Takes in both porameters 
+            - in the form of (x,y) */
+         /* transform: translate(-100px, 100px); */
+         
+         /* translate3d takes in a z value at the end 
+            - does the same thing; just more effiecent & poformance */
+         transform: translate3d(100px, 100px, 100px);
+      }
+
+      /* translate: translate x & y
+         - move across screen */
+   </style>
+</head>
+<body>
+   <div class="box"></div>
+</body>
+</html>

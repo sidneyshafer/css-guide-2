@@ -18,12 +18,16 @@
     * [The Content Property](#the-content-property)
     * [Key Points](#key-points)
     * [Code Examples](#code-examples)
-* [Box Shadows]()
+* [Box Shadows](#box-shadows)
+    * [Box Shadow Property Syntax](#box-shadow-property-syntax)
+    * [Code Examples](#box-shadow-code-examples)
 * [Text Shadows]()
 * [CSS Variables]()
 * [Keyframes]()
 * [Transitions]()
 * [Transform]()
+
+---
 
 ## Targeted Selectors
 
@@ -228,6 +232,91 @@ header:before {
 * This is often used to indicate mandatory fields in forms.
 
 >See full source code for this section in [03-before-after.html](/src/03-before-after.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
+
+## Box Shadows
+
+* [Box Shadow Property Syntax](#box-shadow-property-syntax)
+* [Code Examples](#box-shadow-code-examples)
+
+### Box Shadow Property Syntax
+```css
+box-shadow: [inset] offset-x offset-y [blur-radius] [spread-radius] color;
+```
+1. `inset` (*optional*)
+    * If specified, the shadow appears **inside** the element.
+    * If omitted, the shadow appears **outside** the element.
+2. `offset-x` (*required*)
+    * Specifies the **horizontal** shadow position.
+    * Positive values move the shadow to the right.
+    * Negative values move the shadow to the left.
+3. `offset-y` (*required*)
+    * Specifies the **vertical** shadow position.
+    * Positive values move the shadow down.
+    * Negative values move the shadow up.
+4. `blur-radius` (*optional*)
+    * Controls the blur of the shadow.
+    * Higher values make the shadow softer.
+    * Default value is `0`.
+5. `spread-radius` (*optional*)
+    * Controls the size of the shadow.
+    * Positive values increase the shadow's size.
+    * Negative values shrink it.
+6. `color` (*required*)
+    * Defines the shadow's color.
+    * Accepts any CSS color format.
+
+**Multiple Shadows:**
+* You can specify multiple shadows, separated by commas within the `box-shadow` property.
+
+---
+
+### Box Shadow Code Examples
+
+**Example 1:**
+```css
+box-shadow: 10px 10px teal;
+```
+* Sets the shadow `10px` to the right and `10px` down.
+* No blur or spread is applied, so the shadow has sharp edges.
+* Shadow color is specified as `teal`.
+
+---
+
+**Example 2:**
+```css
+box-shadow: 10px 10px 20px teal;
+```
+* Same as **Example 1**, but adds a `20px` blur radius, making the shadow softer.
+
+---
+
+**Example 3:**
+```css
+box-shadow: -5px -5px 20px teal;
+```
+* Sets the shadow `5px` to the left and `5px` up, with as `20px` blur radius and a shadow color of `teal`.
+
+---
+
+**Example 4:**
+```css
+box-shadow: inset -3px -3px teal;
+```
+* Using the `inset` keyword makes the shadow appear inside the box.
+
+---
+
+**Example 5:**
+```css
+box-shadow: 3px 3px 5px teal, -3px -3px 5px olive;
+```
+* This example adds two shadows separated by a comma.
+
+>See full source code for this section in [04-box-shadows.html](/src/04-box-shadows.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 

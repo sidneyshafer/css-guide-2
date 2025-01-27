@@ -24,7 +24,11 @@
 * [Text Shadows](#text-shadows)
     * [Text Shadow Property Syntax](#text-shadow-property-syntax)
     * [Code Examples](#text-shadow-code-examples)
-* [CSS Variables]()
+* [CSS Variables](#css-variables)
+    * [Overview of CSS Variables](#overview-of-css-variables)
+    * [Defining Variables](#defining-variables)
+    * [Using Variables](#using-variables)
+    * [Advantages of using Custom Properties](#advantages-of-using-custom-properties)
 * [Keyframes]()
 * [Transitions]()
 * [Transform]()
@@ -390,3 +394,74 @@ text-shadow: -0.4rem -0.3rem 0.7rem steelblue;
 >See full source code for this section in [05-text-shadows.html](/src/05-text-shadows.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
+
+## CSS Variables
+
+* [Overview of CSS Variables](#overview-of-css-variables)
+* [Defining Variables](#defining-variables)
+* [Using Variables](#using-variables)
+* [Advantages of using Custom Properties](#advantages-of-using-custom-properties)
+
+---
+
+### Overview of CSS Variables
+
+* CSS variables, also known as **custom properties**, are a way to store reusable values in CSS stylesheets.
+* The variables use a prefix of two dashes `--` and are declared inside a selector, typically `:root` for global scope.
+* They can be used throughout the stylesheet with the `var()` function.
+
+> [!TIP]
+>The [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) provides excellent information about using CSS custom properties.
+
+---
+
+### Defining Variables
+* Variables are often defined in the `:root` selector for access anywhere in the stylesheet:
+```css
+:root {
+   --max-width: 1100px;
+   --primary-color: steelblue;
+   --secondary-color: skyblue;
+   --light-color: #f4f4f4;
+   --box-1-width: 1;
+   --box-2-width: 2;
+}
+```
+
+---
+
+### Using Variables
+* Variables are accessed using the `var()` function:
+```css
+header {
+    background-color: var(--primary-color);
+    border-bottom: 5px var(--secondary-color) solid;
+}
+```
+> [!NOTE]
+>The `var()` function supports fallback values if the variable isn't defined.
+
+---
+
+### Advantages of using Custom Properties
+* **Reusability:**
+    * Define a value once and reuse it across your stylesheet.
+    * Easy to update multiple styles by changing the variable in one place.
+* **Consistency:**
+    * Colors, sizes, and other repeated values are stored in variables for consistency across the design.
+* **Maintainability/Dynamic Updates:**
+    * Updating a single variable changes all elements using it.
+    * Variables can be updated based on different contexts, such as themes or media queries.
+* **Scoped Declaration:**
+    * Variables can be scoped to a specific selector and won't affect other parts of the stylesheet.
+* **Scalability:**
+    * You can easily add more variables for other design elements as needed.
+
+> [!NOTE]
+>See full source code for this section in [06-variables.html](/src/06-variables.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---

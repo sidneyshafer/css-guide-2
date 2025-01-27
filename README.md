@@ -3,35 +3,35 @@
 >Snippets, examples, and code breakdowns for learning more advanced CSS3 concepts.
 
 ## Table of Contents
-* [Targeted Selectors](#targeted-selectors)
+* **[Targeted Selectors](#targeted-selectors)**
     * [Direct Child Selectors](#direct-child-selectors)
     * [Adjacent Sibling Selector](#adjacent-sibling-selector)
     * [Attribute Selector](#attribute-selector)
     * [Attribute Value Selector](#attribute-value-selector)
-* [The nth Child](#the-nth-child)
+* **[The nth Child](#the-nth-child)**
     * [First Child Selector](#first-child-selector)
     * [Last Child Selector](#last-child-selector)
     * [nth Child Selectors](#nth-child-selectors)
-* [Before and After](#before-and-after)
+* **[Before and After](#before-and-after)**
     * [Overview of Before and After](#overview-of-before-and-after)
     * [Element Placement](#element-placement)
     * [The Content Property](#the-content-property)
     * [Key Points](#key-points)
     * [Code Examples](#code-examples)
-* [Box Shadows](#box-shadows)
+* **[Box Shadows](#box-shadows)**
     * [Box Shadow Property Syntax](#box-shadow-property-syntax)
     * [Code Examples](#box-shadow-code-examples)
-* [Text Shadows](#text-shadows)
+* **[Text Shadows](#text-shadows)**
     * [Text Shadow Property Syntax](#text-shadow-property-syntax)
     * [Code Examples](#text-shadow-code-examples)
-* [CSS Variables](#css-variables)
+* **[CSS Variables](#css-variables)**
     * [Overview of CSS Variables](#overview-of-css-variables)
     * [Defining Variables](#defining-variables)
     * [Using Variables](#using-variables)
     * [Advantages of using Custom Properties](#advantages-of-using-custom-properties)
-* [Keyframes]()
-* [Transitions]()
-* [Transform]()
+* **[Keyframes]()**
+* **[Transitions]()**
+* **[Transform]()**
 
 ---
 

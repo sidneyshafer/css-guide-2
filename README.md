@@ -12,7 +12,12 @@
     * [First Child Selector](#first-child-selector)
     * [Last Child Selector](#last-child-selector)
     * [nth Child Selectors](#nth-child-selectors)
-* [Before and After]()
+* [Before and After](#before-and-after)
+    * [Overview of Before and After](#overview-of-before-and-after)
+    * [Element Placement](#element-placement)
+    * [The Content Property](#the-content-property)
+    * [Key Points](#key-points)
+    * [Code Examples](#code-examples)
 * [Box Shadows]()
 * [Text Shadows]()
 * [CSS Variables]()
@@ -79,6 +84,8 @@ input[type='email'] {
 >See full source code for this section in [01-targeted-selectors.html](/src/01-targeted-selectors.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
 
 ## The nth Child
 
@@ -166,3 +173,62 @@ li:nth-child(even) {
 >See full source code for this section in [02-nth-child.html](/src/02-nth-child.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
+
+## Before and After
+* [Overview of Before and After](#overview-of-before-and-after)
+* [Element Placement](#element-placement)
+* [The Content Property](#the-content-property)
+* [Key Points](#key-points)
+* [Code Examples](#code-examples)
+
+### Overview of Before and After
+
+The `:before` and `:after` **pseudo-elements** allow you to insert content before or after the content of an element. 
+
+They are widely used for adding decorative elements, icons, or extra styling without adding more elements to the HTML.
+
+### Element Placement
+* `:before` places content **before** an element's main content.
+* `:after` places content **after** an element's main content.
+
+### The Content Property
+* The `content` property is mandatory for the pseudo-elements to render.
+* The property can hold text, unicode characters, or in most cases an empty string (`content: '';`).
+
+### Key Points
+* `:before` and `:after` can be styled like any other element, using color, background, position, etc.
+* They do not impact the **document flow**; these pseudo-elements are independent layers.
+
+### Code Examples
+```css
+header:before {
+    content: '';
+    background: url('img/mountain.jpg') no-repeat center center/cover;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+```
+* This example adds a decorative background image to the `header` element with the use of `:before`.
+
+```css
+.is-required:after {
+   content: '*';
+   color: red;
+   padding-left: 2px;
+}
+```
+* With the use of `:after`, this example adds a red asterisk (`*`) after elements with the class `is-required`.
+* This is often used to indicate mandatory fields in forms.
+
+>See full source code for this section in [03-before-after.html](/src/03-before-after.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---

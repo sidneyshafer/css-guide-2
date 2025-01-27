@@ -30,8 +30,8 @@ div > p {
     background: #ddd;
 }
 ```
-* Targets all `<p>` elements that are **direct children** of a `<div>`.
-* In this example, only `<p>` elements immediately inside a `<div>` will be styled with a background color of `#ddd`.
+* The direct child selector targets immediate child elements with the use of `>`.
+* This example targets all `<p>` elements that are **direct children** of a `<div>`. Only `<p>` elements immediately inside a `<div>` will be styled with a background color of `#ddd`.
 
 ### Adjacent Sibling Selector
 ```css
@@ -40,9 +40,8 @@ div + p {
    color: #fff;
 }
 ```
-* Targets the immediate sibling `<p>` element that directly follows a `<div>`.
-* In this example, the `<p>` immediately after the `<div>` in will have a background color of `#333` and white (`#fff`) text color.
-* Any `<p>` elements not directly after a `<div>` are unaffected.
+* The adjacent sibling selector targets an element immediately following a specific sibling (`+`).
+* This example targets the immediate sibling `<p>` element that directly follows a `<div>`. The `<p>` immediately after the `<div>` in will have a background color of `#333` and white (`#fff`) text color. Any `<p>` elements not directly after a `<div>` are not affected.
 
 ### Attribute Selector
 ```css
@@ -51,7 +50,8 @@ a[target] {
    color: #fff;
 }
 ```
-* With the use of brackets (`[]`), this selector targets all `<a>` elements that have a `target` attribute.
+* The attribute selector targets elements with a specific attribute, using the syntax `[attr]`.
+* This example targets all `<a>` elements that have a `target` attribute.
 
 ### Attribute Value Selector
 ```css
@@ -61,8 +61,9 @@ input[type='email'] {
    margin-bottom: 5px;
 }
 ```
-* Targets `<input>` elements with a type attribute value of `'text'` or `'email'`.
+* The attribute value selector targets elements with a specific attribute and value, following the syntax `[attr='value']`.
 * Often used for styling form input and label elements.
+* This example targets `<input>` elements with a type attribute value of `'text'` or `'email'`.
 
 ### Targeted Selector Summary
 | Selector              | Overview                         | Syntax |

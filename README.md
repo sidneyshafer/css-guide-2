@@ -85,6 +85,7 @@ input[type='email'] {
 | Attribute Selector | Targets elements with a specific attribute | `[attr]` |
 | Attribute Value Selector | Targets elements with a specific attribute and value | `[attr='value']` |
 
+> [!NOTE]
 >See full source code for this section in [01-targeted-selectors.html](/src/01-targeted-selectors.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
@@ -174,6 +175,7 @@ li:nth-child(even) {
 * Targets every even-numbered child.
 * `even` is equivalent to the formula `2n`. 
 
+> [!NOTE]
 >See full source code for this section in [02-nth-child.html](/src/02-nth-child.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
@@ -231,6 +233,7 @@ header:before {
 * With the use of `:after`, this example adds a red asterisk (`*`) after elements with the class `is-required`.
 * This is often used to indicate mandatory fields in forms.
 
+> [!NOTE]
 >See full source code for this section in [03-before-after.html](/src/03-before-after.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
@@ -316,6 +319,7 @@ box-shadow: 3px 3px 5px teal, -3px -3px 5px olive;
 ```
 * This example adds two shadows separated by a comma.
 
+> [!NOTE]
 >See full source code for this section in [04-box-shadows.html](/src/04-box-shadows.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
@@ -380,6 +384,7 @@ text-shadow: -0.4rem -0.3rem 0.7rem steelblue;
 * The shadow has a blur radius of `0.7rem`.
 * The shadow color is `steelblue`.
 
+> [!NOTE]
 >See full source code for this section in [05-text-shadows.html](/src/05-text-shadows.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>

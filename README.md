@@ -78,7 +78,7 @@ input[type='email'] {
 
 >See full source code for this section in [01-targeted-selectors.html](/src/01-targeted-selectors.html)
 
-<kbd><br>[Back to Top](#table-of-contents)<br></kbd>
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ## The nth Child
 
@@ -165,4 +165,4 @@ li:nth-child(even) {
 
 >See full source code for this section in [02-nth-child.html](/src/02-nth-child.html)
 
-<kbd><br>[Back to Top](#table-of-contents)<br></kbd>
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>

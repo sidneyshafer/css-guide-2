@@ -321,3 +321,65 @@ box-shadow: 3px 3px 5px teal, -3px -3px 5px olive;
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ---
+
+## Text Shadows
+
+* [Text Shadow Property Syntax](#text-shadow-property-syntax)
+* [Code Examples](#text-shadow-code-examples)
+
+### Text Shadow Property Syntax
+```css
+text-shadow: h-shadow v-shadow [blur-radius] [color];
+```
+1. `h-shadow` (Horizontal Shadow - *required*)
+    * Specifies the **horizontal** position of the shadow.
+    * Positive values move the shadow to the right.
+    * Negative values move the shadow to the left.
+2. `v-shadow` (Vertical Shadow - *required*)
+    * Specifies the **vertical** position of the shadow.
+    * Positive values move the shadow downward.
+    * Negative values move the shadow upward.
+3. `blur-radius` (*optional*)
+    * Controls the blur of the shadow.
+    * Higher values make the shadow softer.
+    * Default value is `0`.
+4. `color` (*optional*)
+    * Defines the shadow's color.
+    * Accepts any CSS color format.
+
+**Multiple Shadows:**
+* You can specify multiple shadows, separated by commas within the `text-shadow` property.
+
+---
+
+## Text Shadow Code Examples
+
+**Example 1:**
+```css
+text-shadow: 0.2rem 0.2rem steelblue;
+```
+* The shadow is offset `0.2rem` to the right (horizontal).
+* The shadow is offset `0.2rem` downward (vertical).
+* The shadow color is `steelblue`.
+
+**Example 2:**
+```css
+text-shadow: 0.4rem 0.3rem 0.7rem steelblue;
+```
+* The shadow is offset `0.4rem` to the right (horizontal).
+* The shadow is offset `0.3rem` downward (vertical).
+* The shadow has a blur radius of `0.7rem`.
+* The shadow color is `steelblue`.
+
+**Example 3:**
+```css
+text-shadow: -0.4rem -0.3rem 0.7rem steelblue;
+```
+* The shadow is offset `-0.4rem` to the left (horizontal).
+* The shadow is offset `-0.3rem` upward (vertical).
+* The shadow has a blur radius of `0.7rem`.
+* The shadow color is `steelblue`.
+
+>See full source code for this section in [05-text-shadows.html](/src/05-text-shadows.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>

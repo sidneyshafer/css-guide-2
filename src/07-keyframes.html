@@ -15,7 +15,7 @@
          height: 200px;
 
          /* When you add position: relative, you can add
-            porameters like, top, bottom, left, and right */
+            parameters like, top, bottom, left, and right */
          position: relative;
 
          /* Can combine All of this into animation */
@@ -37,6 +37,13 @@
 
          /* first: name | second: duration/speed | third: fill mode (forwards = stop at the end) | fourth: delay | fifth: timing function */
          animation: animate1 5s forwards 1s ease-in;
+      }
+
+      /* General Syntax */
+      @keyframes animation-name {
+         0% { /* Starting styles */ }
+         50% { /* Midway styles */ }
+         100% { /* Ending styles */ }
       }
 
       @keyframes animate1 {

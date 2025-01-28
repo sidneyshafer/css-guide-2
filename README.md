@@ -31,7 +31,7 @@
     * [Advantages of using Custom Properties](#advantages-of-using-custom-properties)
 * **[Keyframes](#keyframes)**
     * [Overview of CSS Keyframes](#overview-of-css-keyframes)
-    * [General Syntax](#defining-variables)
+    * [Keyframes General Syntax](#keyframes-general-syntax)
     * [The Animation Property](#the-animation-property)
     * [Keyframes Code Example](#keyframes-code-example)
 * **[Transitions]()**
@@ -473,7 +473,7 @@ header {
 ## Keyframes
 
 * [Overview of CSS Keyframes](#overview-of-css-keyframes)
-* [General Syntax](#defining-variables)
+* [General Syntax](#keyframes-general-syntax)
 * [The Animation Property](#the-animation-property)
 * [Keyframes Code Example](#keyframes-code-example)
 
@@ -486,7 +486,7 @@ Animations created with `@keyframes` allow elements to transition smoothly throu
 
 ---
 
-### General Syntax
+### Keyframes General Syntax
 ```css
 @keyframes animation-name {
   0% { /* Starting styles */ }
@@ -545,6 +545,8 @@ animation: [animation-name] [duration] [timing-function] [delay] [iteration-coun
 8. `animation-play-state`
     * Controls whether the animation is running or paused.
     * Options include: `running` (**default**) or `paused`.
+
+---
 
 ### Keyframes Code Example
 

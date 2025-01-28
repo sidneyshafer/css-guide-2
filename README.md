@@ -30,7 +30,7 @@
     * [Using Variables](#using-variables)
     * [Advantages of using Custom Properties](#advantages-of-using-custom-properties)
 * **[Keyframes](#keyframes)**
-    * [Overview of CSS Keyframes](#overview-of-css-variables)
+    * [Overview of CSS Keyframes](#overview-of-css-keyframes)
     * [General Syntax](#defining-variables)
     * [The Animation Property](#the-animation-property)
     * [Keyframes Code Example](#keyframes-code-example)
@@ -472,7 +472,7 @@ header {
 
 ## Keyframes
 
-* [Overview of CSS Keyframes](#overview-of-css-variables)
+* [Overview of CSS Keyframes](#overview-of-css-keyframes)
 * [General Syntax](#defining-variables)
 * [The Animation Property](#the-animation-property)
 * [Keyframes Code Example](#keyframes-code-example)

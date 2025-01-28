@@ -29,7 +29,11 @@
     * [Defining Variables](#defining-variables)
     * [Using Variables](#using-variables)
     * [Advantages of using Custom Properties](#advantages-of-using-custom-properties)
-* **[Keyframes]()**
+* **[Keyframes](#keyframes)**
+    * [Overview of CSS Keyframes](#overview-of-css-variables)
+    * [General Syntax](#defining-variables)
+    * [The Animation Property](#the-animation-property)
+    * [Keyframes Code Example](#keyframes-code-example)
 * **[Transitions]()**
 * **[Transform]()**
 
@@ -465,3 +469,119 @@ header {
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ---
+
+## Keyframes
+
+* [Overview of CSS Keyframes](#overview-of-css-variables)
+* [General Syntax](#defining-variables)
+* [The Animation Property](#the-animation-property)
+* [Keyframes Code Example](#keyframes-code-example)
+
+---
+
+### Overview of CSS Keyframes
+The CSS `@keyframes` rule is used to define animations by specifying intermediate steps between the starting (`from` or `0%`) and ending (`to` or `100%`) states of an element's style. 
+
+Animations created with `@keyframes` allow elements to transition smoothly through multiple visual states over time.
+
+---
+
+### General Syntax
+```css
+@keyframes animation-name {
+  0% { /* Starting styles */ }
+  50% { /* Midway styles */ }
+  100% { /* Ending styles */ }
+}
+```
+* `animation-name` is the name of the keyframes animation you want to use.
+* To use a defined `@keyframes` animation, you apply it to an element using the animation property or its sub-properties.
+
+---
+
+### The Animation Property
+
+The `animation` property in CSS is a shorthand for setting up CSS animations. It combines multiple individual animation-related properties into one line for simplicity and conciseness.
+
+**Property Syntax**
+```css
+animation: [animation-name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+```
+1. `animation-name`
+    *  Specifies the name of the `@keyframes` animation to apply.
+2. `animation-duration`
+    * Specifies how long the animation runs.
+    * Default is 0s.
+3. `animation-timing-function`
+    * Defines the speed curve of the animation.
+    * Options include:
+        * `linear`: Constant speed.
+        * `ease`: Starts slow, speeds up, then slows down (**default**).
+        * `ease-in`: Starts slow and speeds up.
+        * `ease-out`: Starts fast and slows down.
+        * `ease-in-out`: Starts slow, speeds up, then slows down.
+        * `steps(number, [start | end])`: Creates discrete steps in animation.
+4. `animation-delay`
+    * Sets the delay before the animation starts.
+    * Default is 0s.
+5. `animation-iteration-count`
+    * Specifies how many times the animation will play.
+    * Default is 1.
+    * Can be `infinite` for endless repetition.
+6. `animation-direction`
+    * Defines whether the animation should reverse direction on alternate cycles.
+    * Options include:
+        * `normal`: Plays forward (**default**).
+        * `reverse`: Plays backward.
+        * `alternate`: Alternates between forward and backward.
+        * `alternate-reverse`: Alternates starting with backward.
+7. `animation-fill-mode`
+    * Specifies how the animation applies styles before and after execution.
+    * Options include:
+        * `none`: No style is applied outside the animation timeline (**default**).
+        * `forwards`: Retains the styles from the last keyframe.
+        * `backwards`: Applies the styles of the first keyframe before starting.
+        * `both`: Combines `forwards` and `backwards`.
+8. `animation-play-state`
+    * Controls whether the animation is running or paused.
+    * Options include: `running` (**default**) or `paused`.
+
+### Keyframes Code Example
+
+**Keyframe Definition**
+```css
+@keyframes animate1 {
+  from {
+    width: 200px;
+    top: 0;
+  }
+  to {
+    width: 600px;
+    background-color: red;
+    top: 300px;
+  }
+}
+```
+* `from` corresponds to `0%` (start of animation).
+* `to` corresponds to `100%` (end of animation).
+* The width of the `.box` transitions from 200px to 600px.
+* The background color changes from white to red.
+* The `top` property moves the element from 0 (original position) to 300px down.
+
+**Animation Applied**
+```css
+.box {
+  animation: animate1 5s forwards 1s ease-in;
+}
+```
+* The defined keyframes animation is applied to the `.box` element.
+* `animate1` is the name of the keyframes to apply.
+* `5s` defines the duration of the animation to be 5 seconds.
+* The `forwards` keyword Keeps the animation at its last keyframe.
+* A delay of `1s` is added before the animation starts.
+* The animation starts slowly and speeds up with the use of `ease-in` keyword.
+
+> [!NOTE]
+>See full source code for this section in [07-keyframes.html](/src/07-keyframes.html) and [08-keyframes.html](/src/08-keyframes2.html).
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>

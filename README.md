@@ -35,7 +35,7 @@
     * [The Animation Property](#the-animation-property)
     * [Keyframes Code Example](#keyframes-code-example)
 * **[Transitions](#transitions)**
-* **[Transform]()**
+* **[Transform](#transform)**
 
 ---
 
@@ -634,6 +634,65 @@ transition: all 2s ease-in-out;
 
 > [!NOTE]
 >See full source code for this section in [09-transitions.html](/src/09-transitions.html).
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
+
+## Transform
+
+* [Overview of CSS Transform](#overview-of-css-transform)
+* [General Syntax with Code Examples](#general-syntax-with-code-examples)
+
+---
+
+### Overview of CSS Transform
+
+The CSS `transform` property allows elements to be visually manipulated in various ways, including rotation, scaling, skewing, and translation. 
+
+:white_check_mark: Useful for animations, UI effects, and dynamic layouts.
+
+:white_check_mark: They do not affect the document flow (they don’t push or pull other elements).
+
+### General Syntax with Code Examples
+```css
+transform: [transform function];
+```
+**<ins>Some key transform functions include</ins>:**
+
+* **`rotate(deg)`** - Rotates an element by a specified angle in degrees (`deg`), radians (`rad`), or turns (`turn`).
+```css
+transform: rotate(25deg); /* Rotates element 25 degrees clockwise */
+```
+
+* **`scale(x, y)`** - Enlarges or shrinks an element based on a scaling factor.
+```css
+transform: scale(2);  /* Doubles the size */
+transform: scale(2, 0.5);  /* Doubles width, halves height */
+```
+
+* **`skew(x-angle, y-angle)`** - Tilts an element along the X and Y axes.
+```css
+transform: skew(30deg, 20deg); /* Skews 30° horizontally, 20° vertically */
+```
+
+* **`translate(x, y)`** - Shifts the element along the X and Y axes.
+```css
+transform: translate(100px, 50px); /* Moves 100px right, 50px down */
+```
+
+* **`translate3d(x, y, z)`** - Moves in 3D space; works like `translate()`, but with a third `z` parameter for depth movement.
+```css
+transform: translate3d(100px, 100px, 100px); /* Moves 3D along X, Y, Z */
+```
+
+* **`matrix(a, b, c, d, e, f)`** - Matrix transformations combine multiple transformations into a single function.
+```css
+transform: matrix(1, 2, 3, 4, 5, 6); /* Less commonly used but more performance-efficient. */
+```
+
+> [!NOTE]
+>See full source code for this section in [10-transform.html](/src/10-transform.html).
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 

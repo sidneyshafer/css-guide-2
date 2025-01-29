@@ -35,7 +35,12 @@
     * [The Animation Property](#the-animation-property)
     * [Keyframes Code Example](#keyframes-code-example)
 * **[Transitions](#transitions)**
+    * [Overview of CSS Transitions](#overview-of-css-transitions)
+    * [General Syntax](#general-syntax-of-transition-property)
+    * [Transition Code Example](#transition-code-example)
 * **[Transform](#transform)**
+    * [Overview of CSS Transform](#overview-of-css-transform)
+    * [General Syntax with Code Examples](#general-syntax-with-code-examples)
 
 ---
 

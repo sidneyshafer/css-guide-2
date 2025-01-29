@@ -34,7 +34,7 @@
     * [Keyframes General Syntax](#keyframes-general-syntax)
     * [The Animation Property](#the-animation-property)
     * [Keyframes Code Example](#keyframes-code-example)
-* **[Transitions]()**
+* **[Transitions](#transitions)**
 * **[Transform]()**
 
 ---

@@ -587,3 +587,54 @@ animation: [animation-name] [duration] [timing-function] [delay] [iteration-coun
 >See full source code for this section in [07-keyframes.html](/src/07-keyframes.html) and [08-keyframes.html](/src/08-keyframes2.html).
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
+
+## Transitions
+
+* [Overview of CSS Transitions](#overview-of-css-transitions)
+* [General Syntax](#general-syntax-of-transition-property)
+* [Transition Code Example](#transition-code-example)
+
+---
+
+### Overview of CSS Transitions
+
+The CSS `transition` property allows you to smoothly animate changes to CSS properties over time. 
+
+Instead of an immediate shift, transitions let elements gradually move from one state to another when triggered by an event (like `hover` or `focus` events).
+
+**:rotating_light: You must specify a trigger event.**
+
+---
+
+### General Syntax of Transition Property
+
+:bulb: The `transition` shorthand makes writing transitions easier.
+```css
+transition: property duration timing-function delay;
+```
+1. `transition-property`
+    * Specifies which CSS property to animate.
+2. `transition-duration`
+    * Defines how long the transition takes.
+3. `transition-timing-function`
+    * Controls the speed curve of the transition.
+3. `transition-delay`
+    * Specifies a delay before the transition starts.
+
+---
+
+### Transition Code Example
+
+```css
+transition: all 2s ease-in-out;
+```
+* This applies a 2-second smooth transition to all animate-able properties.
+
+> [!NOTE]
+>See full source code for this section in [09-transitions.html](/src/09-transitions.html).
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+---
